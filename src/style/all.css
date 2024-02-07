@@ -218,7 +218,7 @@ p {
 .mobile {
   display: none;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .mobile {
     display: block;
   }
@@ -299,6 +299,11 @@ header {
 .about img {
   max-width: 384px;
 }
+@media (max-width: 767px) {
+  .about img {
+    width: 100%;
+  }
+}
 .about p {
   text-align: center;
   font-size: 24px;
@@ -344,6 +349,11 @@ header {
   gap: 24px;
   margin-bottom: 160px;
 }
+@media (max-width: 1199px) {
+  .album {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 767px) {
   .album {
     flex-direction: column;
@@ -358,6 +368,11 @@ header {
   margin: 40px 0;
 }
 @media (max-width: 1199px) {
+  .img1 {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
   .img1 {
     display: none;
   }

@@ -68,7 +68,7 @@ p {
 }
 .mobile {
   display: none;
-  @include pad {
+  @include mobile {
     display: block;
   }
 }
@@ -132,6 +132,9 @@ header {
   }
   img {
     max-width: 384px;
+    @include mobile {
+      width: 100%;
+    }
   }
   p {
     text-align: center;
@@ -173,6 +176,9 @@ header {
 .album {
   gap: 24px;
   margin-bottom: 160px;
+  @include pad {
+    margin-bottom: 0;
+  }
   @include mobile {
     flex-direction: column;
   }
@@ -184,6 +190,9 @@ header {
   width: 792px;
   margin: 40px 0;
   @include pad {
+    width: 80%;
+  }
+  @include mobile {
     display: none;
   }
 }
