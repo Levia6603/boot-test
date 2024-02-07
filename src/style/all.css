@@ -191,8 +191,8 @@ p {
 
 .container {
   max-width: 1294px;
-  padding: 0 48px;
   margin: 0 auto;
+  padding: 0 48px;
   overflow: hidden;
 }
 @media (max-width: 767px) {
@@ -262,9 +262,9 @@ header {
   }
 }
 .banner .text-left {
+  align-self: start;
   font-size: 24px;
   font-weight: 600;
-  align-self: start;
 }
 @media (max-width: 767px) {
   .banner .text-left {
@@ -399,16 +399,13 @@ header {
 .work-album p {
   margin: 16px 0;
 }
-.work-album li {
-  flex-shrink: 1;
-}
 .work-album img {
   width: 100%;
 }
 @media (max-width: 767px) {
   .work-album {
-    margin: 24px 0;
     flex-direction: column;
+    margin: 24px 0;
   }
 }
 

@@ -42,8 +42,8 @@ p {
 }
 .container {
   max-width: 1294px;
-  padding: 0 48px;
   margin: 0 auto;
+  padding: 0 48px;
   overflow: hidden;
   @include mobile {
     padding: 0 12px;
@@ -102,9 +102,9 @@ header {
     }
   }
   .text-left {
+    align-self: start;
     font-size: 24px;
     font-weight: 600;
-    align-self: start;
     @include mobile {
       font-size: 20px;
     }
@@ -211,15 +211,12 @@ header {
   p {
     margin: 16px 0;
   }
-  li {
-    flex-shrink: 1;
-  }
   img {
     width: 100%;
   }
   @include mobile {
-    margin: 24px 0;
     flex-direction: column;
+    margin: 24px 0;
   }
 }
 footer {
