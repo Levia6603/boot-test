@@ -36,6 +36,9 @@ h4 {
 }
 p {
   font-size: 20px;
+  @include mobile {
+    font-size: 16px;
+  }
 }
 .container {
   max-width: 1294px;
