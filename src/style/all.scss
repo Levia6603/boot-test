@@ -162,6 +162,9 @@ header {
   width: 384px;
   height: 1px;
   background-color: $gray;
+  @include mobile {
+    width: 100%;
+  }
 }
 .brand {
   text-align: center;

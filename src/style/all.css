@@ -333,6 +333,11 @@ header {
   height: 1px;
   background-color: #707070;
 }
+@media (max-width: 767px) {
+  .line {
+    width: 100%;
+  }
+}
 
 .brand {
   text-align: center;
