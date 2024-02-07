@@ -195,6 +195,11 @@ p {
   margin: 0 auto;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .container {
+    padding: 0 12px;
+  }
+}
 
 .flex {
   display: flex;

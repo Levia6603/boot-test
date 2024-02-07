@@ -45,6 +45,9 @@ p {
   padding: 0 48px;
   margin: 0 auto;
   overflow: hidden;
+  @include mobile {
+    padding: 0 12px;
+  }
 }
 .flex {
   display: flex;
