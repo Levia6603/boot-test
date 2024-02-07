@@ -1,0 +1,217 @@
+@import "./css_reset";
+@import "./variable";
+@import "./mixin";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+i {
+  line-height: 1.5;
+}
+h1 {
+  font-size: 80px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 64px;
+  font-weight: 400;
+  font-style: italic;
+  @include mobile {
+    font-size: 40px;
+  }
+}
+h4 {
+  font-size: 24px;
+  font-weight: 600px;
+  @include mobile {
+    font-size: 20px;
+  }
+}
+p {
+  font-size: 20px;
+}
+.container {
+  max-width: 1294px;
+  padding: 0 48px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.flex {
+  display: flex;
+  &-col {
+    flex-direction: column;
+  }
+}
+.j {
+  &-center {
+    justify-content: center;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+}
+.a {
+  &-center {
+    align-items: center;
+    align-content: center;
+  }
+}
+.mobile {
+  display: none;
+  @include pad {
+    display: block;
+  }
+}
+
+section {
+  padding: 56px 0;
+  @include mobile {
+    padding: 40px 0;
+  }
+}
+header {
+  color: $white;
+  font-style: italic;
+  background-image: url("../img/banner.png");
+  background-size: cover;
+  background-position: center;
+}
+.banner {
+  height: 958px;
+  text-align: center;
+  &-text {
+    width: 304px;
+  }
+  h4 {
+    margin: 32px 0;
+    @include mobile {
+      margin: 24px 0;
+    }
+  }
+  .text-left {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: start;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+  @include mobile {
+    height: 600px;
+  }
+}
+.icon-list {
+  gap: 16px;
+  img {
+    width: 60px;
+    @include mobile {
+      width: 48px;
+    }
+  }
+}
+.about {
+  .container {
+    gap: 20px;
+  }
+  h2 {
+    margin: 40px 0;
+    font-style: italic;
+    @include mobile {
+      margin: 20px 0;
+    }
+  }
+  img {
+    max-width: 384px;
+  }
+  p {
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+  ul {
+    gap: 20px;
+  }
+  li > p::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 16px;
+    border-radius: 22px;
+    background-color: $red;
+  }
+}
+.line {
+  width: 384px;
+  height: 1px;
+  background-color: $gray;
+}
+.brand {
+  text-align: center;
+  font-style: italic;
+  color: $white;
+  background-color: $black;
+  p {
+    margin: 32px 0;
+    font-style: normal;
+  }
+}
+.album {
+  gap: 24px;
+  margin-bottom: 160px;
+  @include mobile {
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+}
+.img1 {
+  width: 792px;
+  margin: 40px 0;
+  @include pad {
+    display: none;
+  }
+}
+.other-work {
+  text-align: center;
+}
+.work-album {
+  gap: 24px;
+  margin: 48px 0;
+  p {
+    margin: 16px 0;
+  }
+  li {
+    flex-shrink: 1;
+  }
+  img {
+    width: 100%;
+  }
+  @include mobile {
+    margin: 24px 0;
+    flex-direction: column;
+  }
+}
+footer {
+  padding: 64px 0;
+  text-align: center;
+  font-style: italic;
+  color: $white;
+  background-color: $black;
+  p {
+    margin: 16px 0;
+    font-size: 24px;
+  }
+}
